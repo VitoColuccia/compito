@@ -41,4 +41,9 @@ class User extends Authenticatable
     /**
      * @var mixed|string
      */
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

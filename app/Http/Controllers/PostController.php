@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -15,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = User::find(1)->posts;
 
         return view('/posts')->with([
             'posts' => $posts
@@ -29,7 +30,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('users/create_user');
+        //
     }
 
     /**

@@ -14,8 +14,10 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $user = new User();
+        /*$user = new User();
         $user->username = 'Pincopallino';
-        $user->save();
+        $user->save();*/
+
+        User::factory()->count(50)->create();
     }
 }

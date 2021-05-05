@@ -24,6 +24,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->firstName,
             'description' => $this->faker->paragraph,
+            'user_id' => $this->faker->numberBetween(1,2)
         ];
     }
 }
