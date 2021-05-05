@@ -1,0 +1,56 @@
+body{
+    padding: 20px;
+    background-color: #cbd5e0;
+}
+
+body .content{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+body .content div{
+    padding: 10px;
+    margin: 10px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+
+}
+
+body .content .new{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+body .content .new .inputs{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+body .content .new input[type=submit]{
+    width: 10%;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    height: min-content;
+    padding: 10px;
+    border: none;
+}
+
+body .content .new input[type=submit]:hover {
+    background-color: #ffffff;
+    color: lightskyblue;
+
+}
+
+body .content .list .element{
+    background-color: #ffffff;
+}
+.w-full{
+    width: 100%;
+}
