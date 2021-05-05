@@ -53,6 +53,7 @@ class PostController extends Controller
             $post = new Post();
             $post->title = $request->title;
             $post->description = $request->description;
+            $post->user_id = 1;
             $post->save();
         }
         return redirect()->action([PostController::class, 'index']);
